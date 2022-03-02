@@ -1,8 +1,8 @@
 //
 //  GameViewController.swift
-//  alphaGea
+//  gioco
 //
-//  Created by Mauro Buscemi on 02/03/22.
+//  Created by LabMiT03 on 09/02/22.
 //
 
 import UIKit
@@ -14,46 +14,20 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
-        // including entities and graphs.
-        if let scene = GKScene(fileNamed: "GameScene") {
-            
-            // Get the SKScene from the loaded GKScene
-            if let sceneNode = scene.rootNode as! GameScene? {
+        // Presenta la scena
+        if let view = self.view as! SKView? {
+            let scene = GameScene(size: view.bounds.size)
+          
+                // Adatta la scena alla dimensione dello schermo
+            scene.scaleMode = .aspectFill
                 
-                // Copy gameplay related content over to the scene
-                sceneNode.entities = scene.entities
-                sceneNode.graphs = scene.graphs
-                
-                // Set the scale mode to scale to fit the window
-                sceneNode.scaleMode = .aspectFill
-                
-                // Present the scene
-                if let view = self.view as! SKView? {
-                    view.presentScene(sceneNode)
+                // Mostra la scena
+            view.presentScene (scene)
+            // Se il parametro fosse a false, gli elementi "accavallati" verrebbero reindirizzati nell'ordine in cui vengono inseriti in vista
+            view.ignoresSiblingOrder = true
                     
-                    view.ignoresSiblingOrder = true
-                    
-                    view.showsFPS = true
-                    view.showsNodeCount = true
-                }
-            }
+            view.showsFPS = true
+            view.showsNodeCount = true
         }
-    }
-
-    override var shouldAutorotate: Bool {
-        return true
-    }
-
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
-    }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 }

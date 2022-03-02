@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  alphaGea
+//  gioco
 //
-//  Created by Mauro Buscemi on 02/03/22.
+//  Created by LabMiT03 on 09/02/22.
 //
 
 import UIKit
