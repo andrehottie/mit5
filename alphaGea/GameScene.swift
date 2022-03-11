@@ -14,6 +14,7 @@ class GameScene: SKScene {
     let tasto1 = SKSpriteNode(imageNamed: "immagine1")
     let tasto2 = SKSpriteNode(imageNamed: "immagine2")
     let tasto3 = SKSpriteNode(imageNamed: "immagine3")
+
     override func sceneDidLoad() {
         background.size = self.size
         background.position = CGPoint (x: self.size.width/2, y: self.size.height/2)
@@ -44,7 +45,7 @@ class GameScene: SKScene {
         let touchedNode = nodes(at: location!)
         if (touchedNode.first?.position.x == tasto1.position.x && touchedNode.first?.position.y == tasto1.position.y) {
             
-            view?.presentScene(ScenaVuotaScene())
+            Navigation().transition(fromScene: self, toScene: .Gameplay)
         }
         
     }}

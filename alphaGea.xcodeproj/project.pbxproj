@@ -16,6 +16,7 @@
 		156D85B527CFB4A70094BDA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156D85B427CFB4A70094BDA3 /* Assets.xcassets */; };
 		156D85B827CFB4A70094BDA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156D85B627CFB4A70094BDA3 /* LaunchScreen.storyboard */; };
 		156D85BF27CFC26E0094BDA3 /* ScenaVuota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D85BE27CFC26E0094BDA3 /* ScenaVuota.swift */; };
+		15C6350327D8AFC200CE8CA5 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6350227D8AFC200CE8CA5 /* NavigationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		156D85B427CFB4A70094BDA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		156D85B727CFB4A70094BDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		156D85BE27CFC26E0094BDA3 /* ScenaVuota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenaVuota.swift; sourceTree = "<group>"; };
+		15C6350227D8AFC200CE8CA5 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				156D85B427CFB4A70094BDA3 /* Assets.xcassets */,
 				156D85B627CFB4A70094BDA3 /* LaunchScreen.storyboard */,
 				156D85BE27CFC26E0094BDA3 /* ScenaVuota.swift */,
+				15C6350227D8AFC200CE8CA5 /* NavigationManager.swift */,
 			);
 			path = alphaGea;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				156D85AE27CFB4A40094BDA3 /* GameScene.swift in Sources */,
 				156D85B027CFB4A40094BDA3 /* GameViewController.swift in Sources */,
 				156D85A827CFB4A40094BDA3 /* AppDelegate.swift in Sources */,
+				15C6350327D8AFC200CE8CA5 /* NavigationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
